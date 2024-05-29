@@ -52,8 +52,8 @@ public class VerificationServiceImpl implements VerificationService{
                                         .revisions(0)
                                         .build();
         verificationRepo.save(verification);
-        String subject = "Saviour Email Verification";
-        String content = "<p>Hello,</p><p>Saviour OTP verification " + otp + "</p>";
+        String subject = "Thinkify Email Verification";
+        String content = "<p>Hello,</p><p>Thinkify OTP verification " + otp + "</p>";
         emailSenderService.sendOtpMail(email, subject, content);
         
     }
